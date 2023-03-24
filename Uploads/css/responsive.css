@@ -1,0 +1,20 @@
+
+/* Phone Screen */
+@media  screen and (max-width:992px) {
+    .logo-responsive{
+        width: 200px !important;
+    }
+    .img-slider{
+        max-height: 240px !important;
+        object-fit: cover;
+    }
+    .responsive-div-color{
+        background-color:#ebebeb !important;
+    }
+    .nav-link{
+        text-align: center;
+    }
+   
+    
+}
+/* Tablet Screen */
