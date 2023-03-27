@@ -1,11 +1,14 @@
 
 /* Phone Screen */
 @media  screen and (max-width:992px) {
+    #header{
+    
+    }
     .logo-responsive{
         width: 200px !important;
     }
     .img-slider{
-        max-height: 240px !important;
+        max-height: 210px !important;
         object-fit: cover;
     }
     .responsive-div-color{
@@ -14,7 +17,25 @@
     .nav-link{
         text-align: center;
     }
+    .img-article{
+        object-fit: cover;
+      
+        height: 100%;
+    }
+    #offcanvasNavbar2{
+        max-width: 80vw;
+    }
    
     
 }
 /* Tablet Screen */
+@media only screen and (min-width:993px) and(max-width:1400px){
+    .img-slider{
+        max-height: 500px !important;
+        object-fit: cover;
+    }
+    .nav-link{
+        text-align: center;
+        font-size: 13px !important;
+    }
+}

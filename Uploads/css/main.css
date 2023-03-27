@@ -1,10 +1,9 @@
 
 
 /* page 1 */
-html,p,h1,h2,h5,a{
-    font-family: 'multi-regular', sans-serif !important;
+html,p,h1,h2,h3,h4,h5,a,span{
+    font-family: 'Muli';
 }
-
 .hr{
     color: #857c7c;
     height: 1px;
@@ -23,7 +22,9 @@ a:hover{
     }
     
 }
-
+#header{
+    transition: all 0.5s;
+}
 .logo-img{
     width: 25vw;
     
@@ -46,15 +47,43 @@ a:hover{
     background-color: #26ac7b;
     color: #fff !important;
 }
+.search-form{
+    height: 40px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 6px;
+}
+.search-form>input{
+    border: 0.5px;
+    border-bottom-left-radius: 6px;
+    border-top-left-radius: 6px;
+    padding: 0 16px;
+   
 
+}
+.search-form>input:focus-visible{
+   
+    outline: 2px solid rgba(38, 172, 123, 0.5);
+    
+    box-shadow: rgba(38, 172, 123, 0.24) 0px 3px 8px;
+    
+}
+.search-form>button{
+    background-color: #26ac7b;
+    color: #fff;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+}
 /* end nav */
 /* slider */
 .img-slider{
-    max-height: 800px;
+    max-height: 700px;
     object-fit: cover;
 }
 .slide-card:hover{
-    filter: brightness(60%);
+    /* filter: brightness(60%); */
+}
+.carousel-indicators >.active{
+    background-color: #26ac7b;
 }
 /* end slider */
 /* content */
@@ -66,6 +95,7 @@ a:hover{
 .topic-card:hover{
     filter: brightness(60%);
     color: #26ac7b;
+    transition: 0.4s;
 }
 /* section2 */
 .video-topic{
@@ -91,5 +121,43 @@ a:hover{
 /* page 2 */
 .img-article{
     object-fit: cover;
-    max-height: 300px;
+    height: 100%;
+    width: 100%;
+   
+}
+.title-topic{
+    border-bottom: solid 3px #ff3d01;
+}
+.avatar-admin{
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    object-fit: contain;
+}
+.card-article:hover{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: 0.5s;
+}
+.pagination .page-link{
+   color: #ff3d01;
+}
+/* .pagination .page-link:hover{
+    color: #ff3d01;
+} */
+.pagination >.active > a{
+    background-color: #ff3d01 !important;
+    color: white !important;
+    border: solid 1px #ff3d01 !Important;
+}
+.pagination > .disabled >a{
+   
+    color: #8e9296;
+}
+
+/* page 3 */
+.breadcrumb-item{
+    color: #ff3d01;
+}
+.article-span{
+    font-size: 12px;
 }
